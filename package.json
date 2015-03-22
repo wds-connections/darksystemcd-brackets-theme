@@ -5,7 +5,7 @@
     "homepage": "https://github.com/wds-connections/darksystemcd-brackets-theme",
     "version": "1.0.0",
     "author": "WDS.DarkBrain® Production <wds.darkbrain@outlook.com> (https://plus.google.com/104871648733139279056)",
-    "license": "Personal Project at Participation Availability - PPPA",
+    "license": "",
     "theme": {
         "file": "theme.less",
         "dark": true,
