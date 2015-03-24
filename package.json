@@ -10,9 +10,9 @@
         "url": "https://github.com/wds-connections/darksystemcd-brackets-theme"
     },
     "theme": {
-        "file": "theme.css",
+        "file": "theme.less",
         "dark": true,
         "addModeClass": true
     },
-    "keywords": ["theme"]
+    "keywords": ["theme","darksystemcd","dscd","darkbrain","wds","wdhells"]
 }
