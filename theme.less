@@ -27,8 +27,9 @@ usage: locate your self by reading comments instead of the content,
 
 .CodeMirror, .CodeMirror-scroll {
     background-color: #000;
-    font-size: 120%;
-    line-height: 125%;
+    font-size: 130%;
+    font-family: "Courier New", monospace;
+    line-height: 120%;
     color: white;
 }
 
@@ -61,16 +62,29 @@ usage: locate your self by reading comments instead of the content,
   border-right: 2px solid transparent !important;
 }
 
+.cm-m-javascript.CodeMirror-matchingbracket {
+  background-color: rgba(178, 178, 178, 0.49);
+  color:lime !important;
+  border-left: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+  font-weight: bolder;
+}
+
 .CodeMirror-nonmatchingbracket  {
   font-weight: bold;
   color:red;
 }
 
-.CodeMirror-matchingtag {
-  background-color: transparent;
-  color:lime !important;
+.cm-m-clike.CodeMirror-matchingtag,
+.cm-m-xml.CodeMirror-matchingtag{
+  background-color: rgba(178, 178, 178, 0.45);
   border-left: 1px solid transparent !important;
   border-right: 1px solid transparent !important;
+}
+
+.CodeMirror-nonmatchingtag {
+  font-weight: bold;
+  color:red;
 }
 
 .CodeMirror-searching {
@@ -91,19 +105,34 @@ usage: locate your self by reading comments instead of the content,
 }
 
 .cm-comment {
-  background-color: rgba(34, 74, 181, 0.60);
+  background-color: rgba(42, 93, 234, 0.6);
   color: silver !important;
 }
 
-.cm-m-css, .cm-operator, .cm-bracket {
-  color:white;
+// -->
+.cm-keyword, .cm-atom, .cm-number, .cm-def,
+.cm-variable, .cm-punctuation, .cm-property,
+.cm-operator, cm-variable-2, cm-variable-3,
+.cm-string, .cm-string-2, .cm-meta, .cm-qualifier,
+.cm-builtin, .cm-bracket, .cm-tag, .cm-attribute,
+.cm-header, .cm-quote, .cm-hr, .cm-link,
+.cm-negative, .cm-positive, .cm-strong, .cm-em,
+.cm-strikethrough, .cm-error, .cm-invalidchar{
+  font-weight: bold;
+  color: red;
 }
 
-.cm-m-xml{
-  color:ghostwhite;
+/*PHP*/.cm-m-clike, /*CSS, LESS*/.cm-m-css,
+/*JavaScript*/.cm-m-javascript {
+  color: ghostwhite;
 }
 
-.cm-keyword {
+/*HTML, XML*/.cm-m-xml {
+  color: #dddde0;
+}
+
+.cm-m-clike.cm-keyword, .cm-m-css.cm-keyword,
+.cm-m-xml.cm-keyword{
   font-weight: bold;
   color: #BFBEBA;
 }
@@ -113,43 +142,78 @@ usage: locate your self by reading comments instead of the content,
   color: #eeebe7;
 }
 
-.cm-m-xml.cm-qualifier {
-  font-style:oblique;
-  font-weight: bold;
-  color: #BFBEBA;
-}
-
-.cm-variable, .cm-meta {
-  color: #E0ACA4;
-}
-
-.cm-property, .cm-m-xml.cm-attribute {
-  font-style:oblique;
-  color: #BFB599;
-}
-
-.cm-m-javascript.cm-property, .cm-m-css.cm-property {
-  font-style:oblique;
-  color: silver;
-}
-
-.cm-atom {
-  color: #B3B3B3;
-}
-
 .cm-m-css.cm-atom {
+  font-weight: lighter;
   color: #b5a5c0;
 }
 
-.cm-string, .cm-number, .cm-m-xml.cm-string {
+.cm-m-clike.cm-number, .cm-m-css.cm-number,
+.cm-m-javascript.cm-number {
   color: #E6DD9C;
 }
 
-.cm-def, .cm-variable-2, .cm-m-xml {
+.cm-m-css.cm-def{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #BFBEBA;
+}
+
+.cm-m-javascript.cm-def{
+  font-weight: lighter;
+  color: #BFBEBA;
+}
+
+.cm-m-css.cm-variable, .cm-m-javascript.cm-variable {
+  color: #E0ACA4;
+}
+
+.cm-m-javascript.cm-variable.cm-error {
+  color: red;
+}
+
+.cm-m-css.cm-property {
+  font-style:oblique;
   color: silver;
 }
 
+.cm-m-javascript.cm-property {
+  font-style:oblique;
+  font-weight: lighter;
+  color: silver;
+}
+
+.cm-m-javascript.cm-operator, .cm-m-xml.cm-operator {
+  color: white;
+}
+
+.cm-m-javascript.cm-variable-2,
+.cm-m-javascript.cm-variable-3{
+  color: silver;
+}
+
+.cm-m-clike.cm-string, .cm-m-css.cm-string, 
+.cm-m-javascript.cm-string, .cm-m-xml.cm-string {
+  color: #E6DD9C;
+}
+
+.cm-m-clike.cm-string-2, .cm-m-css.cm-string-2, 
+.cm-m-javascript.cm-string-2, .cm-m-xml.cm-string-2 {
+  color: #E6DD9C;
+}
+
+.cm-m-css.cm-meta {
+  color: #df9286;
+}
+
+.cm-qualifier {}
+
 .cm-m-xml.cm-tag {
-  font-weight:bold;
-  color: #C9C9C9;
+  font-weight:bolder;
+  color: #829c9d;
+}
+
+.cm-m-xml.cm-attribute {
+  font-style:oblique;
+  font-weight: lighter;
+  color: #afa893;
 }
