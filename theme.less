@@ -27,9 +27,9 @@ usage: locate your self by reading comments instead of the content,
 
 .CodeMirror, .CodeMirror-scroll {
     background-color: #000;
-    font-size: 130%;
-    font-family: "Courier New", monospace;
-    line-height: 120%;
+    font-family: "Courier New" monospace !important;
+    font-size: 155%;
+    line-height: 115%;
     color: white;
 }
 
@@ -46,12 +46,12 @@ usage: locate your self by reading comments instead of the content,
 }
 
 .CodeMirror-cursor {
-    border-left: 1px solid silver !important;
+    border-left: 2px solid white !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
     border-left: none !important;
-    border-bottom: 1px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 
 .CodeMirror-matchingbracket {
@@ -105,7 +105,7 @@ usage: locate your self by reading comments instead of the content,
 }
 
 .cm-comment {
-  background-color: rgba(42, 93, 234, 0.6);
+  background-color: rgba(46, 98, 240, 0.6);
   color: silver !important;
 }
 
@@ -117,39 +117,40 @@ usage: locate your self by reading comments instead of the content,
 .cm-builtin, .cm-bracket, .cm-tag, .cm-attribute,
 .cm-header, .cm-quote, .cm-hr, .cm-link,
 .cm-negative, .cm-positive, .cm-strong, .cm-em,
-.cm-strikethrough, .cm-error, .cm-invalidchar{
-  font-weight: bold;
+.cm-strikethrouh, .cm-error, .cm-invalidchar{
+  font-weight: 600;
   color: red;
 }
 
 /*PHP*/.cm-m-clike, /*CSS, LESS*/.cm-m-css,
 /*JavaScript*/.cm-m-javascript {
-  color: ghostwhite;
+  font-weight: bold;
+  color: white;
 }
 
 /*HTML, XML*/.cm-m-xml {
+  font-weight: 600;
   color: #dddde0;
 }
 
 .cm-m-clike.cm-keyword, .cm-m-css.cm-keyword,
-.cm-m-xml.cm-keyword{
-  font-weight: bold;
-  color: #BFBEBA;
-}
+.cm-m-xml.cm-keyword{ 
+  color: silver ;
+} 
 
-.cm-m-javascript.cm-keyword {
+.cm-m-javascript.cm-keyword { 
   font-weight: bold;
-  color: #eeebe7;
+  color: white;
 }
 
 .cm-m-css.cm-atom {
-  font-weight: lighter;
-  color: #b5a5c0;
+  font-style: italic;
+  color: #bda4d0;
 }
 
 .cm-m-clike.cm-number, .cm-m-css.cm-number,
 .cm-m-javascript.cm-number {
-  color: #E6DD9C;
+  color: yellow;
 }
 
 .cm-m-css.cm-def{
@@ -159,15 +160,14 @@ usage: locate your self by reading comments instead of the content,
 }
 
 .cm-m-javascript.cm-def{
-  font-weight: lighter;
-  color: #BFBEBA;
+  color: silver;
 }
 
 .cm-m-css.cm-variable, .cm-m-javascript.cm-variable {
-  color: #E0ACA4;
+  color: #d3b0b0;
 }
 
-.cm-m-javascript.cm-variable.cm-error {
+.cm-error {
   color: red;
 }
 
@@ -177,9 +177,8 @@ usage: locate your self by reading comments instead of the content,
 }
 
 .cm-m-javascript.cm-property {
-  font-style:oblique;
-  font-weight: lighter;
-  color: silver;
+  font-style: oblique;
+  color: #adadad;
 }
 
 .cm-m-javascript.cm-operator, .cm-m-xml.cm-operator {
@@ -188,17 +187,19 @@ usage: locate your self by reading comments instead of the content,
 
 .cm-m-javascript.cm-variable-2,
 .cm-m-javascript.cm-variable-3{
+  font-weight: 600;
   color: silver;
 }
 
 .cm-m-clike.cm-string, .cm-m-css.cm-string, 
 .cm-m-javascript.cm-string, .cm-m-xml.cm-string {
-  color: #E6DD9C;
+  font-weight: 600;
+  color: yellow;
 }
 
 .cm-m-clike.cm-string-2, .cm-m-css.cm-string-2, 
 .cm-m-javascript.cm-string-2, .cm-m-xml.cm-string-2 {
-  color: #E6DD9C;
+  color: #ffe200;
 }
 
 .cm-m-css.cm-meta {
@@ -214,6 +215,5 @@ usage: locate your self by reading comments instead of the content,
 
 .cm-m-xml.cm-attribute {
   font-style:oblique;
-  font-weight: lighter;
   color: #afa893;
 }
