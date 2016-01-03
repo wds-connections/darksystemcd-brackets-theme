@@ -63,7 +63,7 @@ usage: locate your self by reading comments instead of the content,
 }
 
 .cm-m-javascript.CodeMirror-matchingbracket {
-  background-color: rgba(178, 178, 178, 0.49);
+  background-color: rgba(178, 177, 177, 0.25);
   color:lime !important;
   border-left: 1px solid transparent !important;
   border-right: 1px solid transparent !important;
@@ -77,9 +77,7 @@ usage: locate your self by reading comments instead of the content,
 
 .cm-m-clike.CodeMirror-matchingtag,
 .cm-m-xml.CodeMirror-matchingtag{
-  background-color: rgba(178, 178, 178, 0.45);
-  border-left: 1px solid transparent !important;
-  border-right: 1px solid transparent !important;
+  background-color: rgba(178, 178, 178, 0.3);
 }
 
 .CodeMirror-nonmatchingtag {
@@ -133,9 +131,13 @@ usage: locate your self by reading comments instead of the content,
   color: #dddde0;
 }
 
-.cm-m-clike.cm-keyword, .cm-m-css.cm-keyword,
-.cm-m-xml.cm-keyword{ 
-  color: silver ;
+.cm-m-clike.cm-keyword, .cm-m-xml.cm-keyword{ 
+  color: silver;
+}
+.cm-m-css.cm-keyword{ 
+  color: rgb(234, 184, 163) ;
+  font-weight: bold;
+  border-left: 5px solid transparent !important;
 } 
 
 .cm-m-javascript.cm-keyword { 
