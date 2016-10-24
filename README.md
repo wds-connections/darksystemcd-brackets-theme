@@ -3,15 +3,16 @@ provide the productivity quality production from DarkSystemCD programming<br />
 as WDS_Styles color scheme.
 
 ---
+note.: use [Ctrl +/-] to adjust text size;
 
 ####Presentation for JavaScript codes<br />
-![DarkSystemCD](https://googledrive.com/host/0B4nYTSu0FCWLfjl2TUFVQWlLbTM0OXZ5ZnlIS1VrUFJjRFotWWdYRlVuOThYRzFWMl9UTnM/darksystemcd_brackets_theme1.jpg)
+![DarkSystemCD](http://i482.photobucket.com/albums/rr181/wdhells/RANDOM_IMAGES/GITHUB/darksystemcd_brackets_theme1.jpg~original)
 ####Presentation for CSS productivity<br />
-![DarkSystemCD](https://googledrive.com/host/0B4nYTSu0FCWLfjl2TUFVQWlLbTM0OXZ5ZnlIS1VrUFJjRFotWWdYRlVuOThYRzFWMl9UTnM/darksystemcd_brackets_theme2.jpg)
+![DarkSystemCD](http://i482.photobucket.com/albums/rr181/wdhells/RANDOM_IMAGES/GITHUB/darksystemcd_brackets_theme2.jpg~original)
 ####Software overwiew with theme design<br />
-![DarkSystemCD](https://googledrive.com/host/0B4nYTSu0FCWLfjl2TUFVQWlLbTM0OXZ5ZnlIS1VrUFJjRFotWWdYRlVuOThYRzFWMl9UTnM/darksystemcd_brackets_theme3.jpg)
+![DarkSystemCD](http://i482.photobucket.com/albums/rr181/wdhells/RANDOM_IMAGES/GITHUB/darksystemcd_brackets_theme3.jpg~original)
 ####Presentation for dynamic HTML<br />
-![DarkSystemCD](https://googledrive.com/host/0B4nYTSu0FCWLfjl2TUFVQWlLbTM0OXZ5ZnlIS1VrUFJjRFotWWdYRlVuOThYRzFWMl9UTnM/darksystemcd_brackets_theme4.jpg)
+![DarkSystemCD](http://i482.photobucket.com/albums/rr181/wdhells/RANDOM_IMAGES/GITHUB/darksystemcd_brackets_theme4.jpg~original)
 
 ---
 
