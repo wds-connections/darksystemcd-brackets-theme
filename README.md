@@ -31,9 +31,9 @@ created for the presentation of WDS.DarkBrain&#174; Productions.<br /><br />
 DIGITAL MONITOR DISPLAY SETTINGS
 
 [D a r k R o o m]
-backlight: 0; contrast: 20; brightness: 40; sharpness: 10; color: 20; tint: 0; color temp.: 0;<br>
+backlight: 0; contrast: 20; 🔆brightness: 40; sharpness: 10; color: 10; tint: 0; color temp.: 0;<br>
 [L i g h t R o o m]
-backlight: 10; contrast: 20; brightness: 40; sharpness: 10; color: 25; tint: 0; color temp.: 0;<br>
+backlight: 10; contrast: 20; 🔆brightness: 40; sharpness: 10; color: 10; tint: 0; color temp.: 0;<br>
 
 ---
 
