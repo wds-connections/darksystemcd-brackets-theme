@@ -1,9 +1,9 @@
 {
     "name": "darksystemcd-brackets-theme",
     "title": "DarkSystemCD | Theme",
-    "description": "provide the productivity quality production from DarkSystemCD programming as WDS_Styles color scheme.",
+    "description": "provide the productivity quality production from DarkSystemCD® programming as WDS_Styles color scheme.",
     "homepage": "https://github.com/wds-connections/darksystemcd-brackets-theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "WDS.DarkBrain® Production <wds.darkbrain@gmx.com>",
     "repository": {
         "type": "git",
@@ -14,5 +14,5 @@
         "dark": true,
         "addModeClass": true
     },
-    "keywords": ["bloodart","darksystemcd","theme","theplotscheme","wdhells","wds.darkbrain","wds_styles"]
+    "keywords": ["bloodart","darksystemcd","theme","theplotscheme","wdhells","wds.darkbrain","wds_styles","brackets"]
 }
