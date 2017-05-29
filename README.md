@@ -1,18 +1,23 @@
-##DarkSystemCD, Brackets | Theme<br />
-provide the productivity quality production from DarkSystemCD programming<br />
-as WDS_Styles color scheme.
+<h2>DarkSystemCD® | Brackets Theme 1.0.1</h2>
 
----
-note.: use [Ctrl +/-] to adjust text size;
+provide the productivity quality production from DarkSystemCD programming as WDS_Styles color scheme.
 
-####Presentation for JavaScript codes<br />
-![DarkSystemCD](http://i482.photobucket.com/albums/rr181/wdhells/RANDOM_IMAGES/GITHUB/darksystemcd_brackets_theme1.jpg~original)
-####Presentation for CSS productivity<br />
-![DarkSystemCD](http://i482.photobucket.com/albums/rr181/wdhells/RANDOM_IMAGES/GITHUB/darksystemcd_brackets_theme2.jpg~original)
-####Software overwiew with theme design<br />
-![DarkSystemCD](http://i482.photobucket.com/albums/rr181/wdhells/RANDOM_IMAGES/GITHUB/darksystemcd_brackets_theme3.jpg~original)
-####Presentation for dynamic HTML<br />
-![DarkSystemCD](http://i482.photobucket.com/albums/rr181/wdhells/RANDOM_IMAGES/GITHUB/darksystemcd_brackets_theme4.jpg~original)
+<h3>brackets .less file</h3>
+
+![DarkSystemCD® | Brackets Theme](http://i.imgur.com/6DEyKCy.png)
+
+<h3>style .css file</h3>
+
+![DarkSystemCD® | Brackets Theme](http://i.imgur.com/J9UUTlN.png)
+
+<h3>logic .js file</h3>
+
+![DarkSystemCD® | Brackets Theme](http://i.imgur.com/mS157e2.png)
+
+
+<h3>document .html file</h3>
+
+![DarkSystemCD® | Brackets Theme](http://i.imgur.com/74JyXDe.png)
 
 ---
 
