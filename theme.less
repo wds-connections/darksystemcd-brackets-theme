@@ -1,221 +1,147 @@
-/*
-DarkSystemCD, Brackets | Theme
-------------------------------
-https://github.com/wds-connections
-- - - - - - - - - - - - - - - - - ;
-translated to javascript code options
-the workflow built from DarkSystemCD (pascal)Delphi Programming.
-                                   
-DarkSystemCD® used to identify, meet, work and publish
-logics and programming design, software, games and music
-on interfaces and electronic, digital and virtual media.
-                                   
-WDS_Styles is a layout personality scheme
-created for the presentation of WDS.DarkBrain® Productions.
-                                   
-available as sample usage from the original production of DarkSystemCD quality
-in which as far it provides has being created from BloodArt logo(art and literature).
-references should restrict moral violence from any purpose where try - catch - finnaly would affect this availability before whatever statement.
-                                   
-thanks for choosing DarkSystemCD.
-- - - - - - - - - - - - - - - - - ;
-Low Light version for screens adjusted for brightnes and contrast to 20%\30%
-usage: locate your self by reading comments instead of the content,
-       by placing titles on everything important before reading the actual code.
-       it is better DarkSystemCD style to focus on the workflow and organization.
+/*                                                                            ;
+DarkSystemCD, Brackets | Theme                                                ;
+------------------------------                                                ;
+https://github.com/wds-connections                                            ;
+                                                                              ;
+translated to html,css,javascript code options(addind new color sets)         ;
+the workflow built from DarkSystemCD®(pascal)Delphi Programming.              ;
+----------------------------------------------------------------------------- ;
+USAGE TERMS                                                                   ;
+                                                                              ;
+DarkSystemCD® used to identify, meet, work and publish                        ;
+logics and programming design, software, games and music                      ;
+on interfaces and electronic, digital and virtual media.                      ;
+                                                                              ;
+WDS_Styles is a layout personality scheme                                     ;
+created for the presentation of WDS.DarkBrain® Productions.                   ;
+                                                                              ;
+available as sample usage from the original production of DarkSystemCD quality;
+which as far it provides has being created from BloodArt(art and literature). ;
+references should restrict moral violence from any purpose where              ;
+try-catch-finnaly would affect this availability before whatever statement.   ;
+                                                                              ;
+thanks for choosing DarkSystemCD.                                             ;
+- - - - - - - - - - - - - - - - -                                             ;
+version 1.0.1 had updated the theme at different color sets;                  ;
+              go to github to download previous ones;                         ;
+              1.0.1 is focused to work on a Windows machine;                  ;
 */
 
 .CodeMirror, .CodeMirror-scroll {
-    background-color: #000;
-    font-family: "Courier New" monospace !important;
-    font-size: 120%;
-    line-height: 100%;
-    color: white;
+  background-color: #000;
+  color: silver;
+  font-size: 100%;
+  line-height: 110%;
 }
-
 .CodeMirror-focused .CodeMirror-activeline-background {
-  background-color: rgba(102, 102, 102, 0.7);
+  background-color: rgba(102, 102, 102, 0.2);
+}
+.CodeMirror-selected {
+  background-color: rgba(123, 91, 91, 0.5);
+}
+.CodeMirror-focused .CodeMirror-selected  {
+  background-color: rgba(123, 91, 91, 0.7);
 }
 
-.CodeMirror-gutters {
-  background-color: #2A2A2A;
+.CodeMirror-gutters, .CodeMirror-gutter, .CodeMirror-gutter-wrapper {
+  background-color: #222222;
+  color: #6060c7;
+}
+.CodeMirror-foldgutter{
+  background-color: rgba(42, 49, 78, 0.7);
+  color: #6060c7;
+  font-size: 70%;
+}
+.CodeMirror-foldgutter-open:after {
+    color: #5f78a8;
+}
+.CodeMirror-foldgutter-folded:after {
+    color: #a9a9c6;
 }
 
-.CodeMirror-gutter-wrapper {
-  background-color: #333;
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;
+    }
 }
 
 .CodeMirror-cursor {
-    border-left: 2px solid white !important;
+    border-left: 1px solid #c5c8c6 !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
     border-left: none !important;
-    border-bottom: 3px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .CodeMirror-matchingbracket {
-  background-color: transparent;
+  background-color: rgba(178, 178, 178, 0.3);
   font-weight: bold;
   color:lime !important;
   border-left: 2px solid transparent !important;
   border-right: 2px solid transparent !important;
 }
-
-.cm-m-javascript.CodeMirror-matchingbracket {
-  background-color: rgba(178, 178, 178, 0.49);
-  color:lime !important;
-  border-left: 1px solid transparent !important;
-  border-right: 1px solid transparent !important;
-  font-weight: bolder;
-}
-
-.CodeMirror-nonmatchingbracket  {
-  font-weight: bold;
-  color:red;
-}
-
 .cm-m-clike.CodeMirror-matchingtag,
 .cm-m-xml.CodeMirror-matchingtag{
-  background-color: rgba(178, 178, 178, 0.45);
+  background-color: rgba(178, 178, 178, 0.15);
 }
-
-.CodeMirror-nonmatchingtag {
-  font-weight: bold;
+.CodeMirror-nonmatchingtag, .CodeMirror-nonmatchingbracket {
   color:red;
-}
-
-.CodeMirror-searching {
-  color:yellow;
-}
-
-.CodeMirror-searching.searching-current-match {
   font-weight: bold;
-  color:yellow;
 }
 
-.CodeMirror-selected {
-  background-color: rgba(123, 91, 91, 0.8);
-}
-
-.CodeMirror-focused .CodeMirror-selected  {
-  background: #9E6A6A;
-}
-
-.cm-comment {
-  background-color: rgba(46, 98, 240, 0.6);
-  color: silver !important;
+.cm-comment, .cm-m-javascript.cm-comment, .cm-m-xml.cm-comment {
+  background-color: rgba(37, 60, 159, 0.5);
+  color: silver;
   font-family: "Courier New", monospace;
-  font-size: smaller !important;
-  font-weight: 700 !important;
+  font-size: 90%;
 }
 
-// -->
-.cm-keyword, .cm-atom, .cm-number, .cm-def,
-.cm-variable, .cm-punctuation, .cm-property,
-.cm-operator, cm-variable-2, cm-variable-3,
-.cm-string, .cm-string-2, .cm-meta, .cm-qualifier,
-.cm-builtin, .cm-bracket, .cm-tag, .cm-attribute,
-.cm-header, .cm-quote, .cm-hr, .cm-link,
-.cm-negative, .cm-positive, .cm-strong, .cm-em,
-.cm-strikethrouh, .cm-error, .cm-invalidchar{
-  font-weight: bold !important;
-  color: red;
-}
-
-/*PHP*/.cm-m-clike, /*CSS, LESS*/.cm-m-css,
-/*JavaScript*/.cm-m-javascript {
-  font-weight: bold !important;
-  color: white;
-}
-
-/*HTML, XML*/.cm-m-xml {
-  font-weight: 600;
-  color: #dddde0;
-}
-
-.cm-m-clike.cm-keyword, .cm-m-css.cm-keyword,
-.cm-m-xml.cm-keyword{ 
+.CodeMirror-widget, .CodeMirror-foldmarker {
+  background-color: rgba(159, 65, 37, 0.5);
   color: silver;
-} 
+  border: 0px;
+}
 
-.cm-m-javascript.cm-keyword { 
-  font-weight: bold !important;
+.cm-text, .cm-m-xml {
+  color: silver;
+}
+
+.cm-operator, .cm-atom, .cm-m-javascript {
+  color: white;
+  font-family: "Ariel", monospace;
+}
+.cm-keyword, .cm-m-css.cm-builtin {
   color: white;
 }
-
-.cm-m-css.cm-atom {
-  font-style: italic;
-  color: #bda4d0;
+.cm-property {
+  color: #a896d9;
 }
-
-.cm-m-clike.cm-number, .cm-m-css.cm-number,
-.cm-m-javascript.cm-number {
+.cm-m-javascript.cm-variable, .cm-m-css.cm-meta {
+  color: #ea8989;
+  font-family: "Verdana", monospace;
+  font-size: smaller;
+}
+.cm-m-javascript.cm-property, .cm-qualifier, .cm-attribute {
+  color: #ba8b8b;
+}
+.cm-def, .cm-variable, .cm-variable-1, .cm-variable-2, .cm-variable-3 {
+  color: silver;
+}
+.cm-m-css.cm-property, .cm-tag {
+  color: gray;
+}
+.cm-string, .cm-number {
   color: yellow;
-  font-weight: bolder !important;
+  font-family: "Ariel", monospace;
+  font-weight: lighter;
 }
-
-.cm-m-css.cm-def{
-  font-weight: bold;
-  text-decoration: underline;
-  color: #BFBEBA;
-}
-
-.cm-m-javascript.cm-def{
-  color: silver;
-}
-
-.cm-m-css.cm-variable, .cm-m-javascript.cm-variable {
-  color: #d3b0b0;
-}
-
-.cm-error {
-  color: red;
-}
-
-.cm-m-css.cm-property {
-  font-style:oblique;
-  color: silver;
-}
-
-.cm-m-javascript.cm-property {
-  font-style: oblique;
-  color: #adadad;
-}
-
-.cm-m-javascript.cm-operator, .cm-m-xml.cm-operator {
-  color: white;
-}
-
-.cm-m-javascript.cm-variable-2,
-.cm-m-javascript.cm-variable-3{
-  font-weight: bolder !important;
-  color: silver;
-}
-
-.cm-m-clike.cm-string, .cm-m-css.cm-string, 
-.cm-m-javascript.cm-string, .cm-m-xml.cm-string {
-  font-weight: bolder !important;
-  color: yellow;
-}
-
-.cm-m-clike.cm-string-2, .cm-m-css.cm-string-2, 
-.cm-m-javascript.cm-string-2, .cm-m-xml.cm-string-2 {
-  color: #ffe200;
-}
-
-.cm-m-css.cm-meta {
-  color: #df9286;
-}
-
-.cm-qualifier {}
-
-.cm-m-xml.cm-tag {
-  font-weight:bolder;
-  color: #829c9d;
-}
-
-.cm-m-xml.cm-attribute {
-  font-style:oblique;
-  color: #afa893;
+.cm-m-css.cm-atom, .cm-m-xml.cm-atom {
+  color: #6495b9;
+  font-family: "Ariel", monospace;
+  font-weight: lighter;
 }
