@@ -1,7 +1,7 @@
 <h2>DarkSystemCD® | Brackets Theme 1.0.1</h2>
 
 provide the productivity quality production from DarkSystemCD programming as WDS_Styles color scheme.<hr>
-<sub>image sample are displayed using these <b>Bracket Extensions</b>: [[Custom Work](https://github.com/DH3ALEJANDRO/custom-work-for-brackets)]; [[Custom Region Code Folding](https://github.com/thehogfather/brackets-custom-region-code-folding)];</sub>
+<sub>image sample are displayed using these <b>Brackets Extension</b>: [[Custom Work](https://github.com/DH3ALEJANDRO/custom-work-for-brackets)]; [[Custom Region Code Folding](https://github.com/thehogfather/brackets-custom-region-code-folding)];</sub>
 
 <h3>brackets .less file</h3>
 
