@@ -5,7 +5,7 @@ https://github.com/wds-connections                                            ;
                                                                               ;
 translated to html,css,javascript code options(addind new color sets)         ;
 the workflow built from DarkSystemCD®(pascal)Delphi Programming.              ;
------------------------------------------------------------------------------ ;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ;
 USAGE TERMS                                                                   ;
                                                                               ;
 DarkSystemCD® used to identify, meet, work and publish                        ;
@@ -78,20 +78,36 @@ version 1.0.1 had updated the theme at different color sets;                  ;
     border-bottom: 1px solid #fff;
 }
 
+.CodeMirror-matchingtag {
+  border-radius: 35px;
+  animation: matchingbracket 0.8s infinite alternate ease;
+}
 .CodeMirror-matchingbracket {
   background-color: rgba(178, 178, 178, 0.3);
   font-weight: bold;
   color:lime !important;
+  border-radius: 35px;
   border-left: 2px solid transparent !important;
   border-right: 2px solid transparent !important;
+  animation: matchingbracket 0.6s infinite alternate ease-in-out;
+}
+@keyframes matchingbracket {
+    from {background-color: rgba(178, 178, 178, 0.1);}
+    to {background-color: rgba(178, 178, 178, 0.3);}
 }
 .cm-m-clike.CodeMirror-matchingtag,
 .cm-m-xml.CodeMirror-matchingtag{
   background-color: rgba(178, 178, 178, 0.15);
 }
 .CodeMirror-nonmatchingtag, .CodeMirror-nonmatchingbracket {
+  background-color: rgba(255, 0, 0, 0.5);
   color:red;
   font-weight: bold;
+  animation: nonmatching 0.3s infinite alternate ease-in-out;
+}
+@keyframes nonmatching {
+    from {color:red;background-color: rgba(255, 0, 0, 1);}
+    to {color:white;background-color: rgba(255, 0, 0, 0.5);}
 }
 
 .cm-comment, .cm-m-javascript.cm-comment, .cm-m-xml.cm-comment {
