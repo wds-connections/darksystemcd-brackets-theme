@@ -5,7 +5,7 @@ https://github.com/wds-connections                                            ;
                                                                               ;
 translated to html,css,javascript code options(addind new color sets)         ;
 the workflow built from DarkSystemCD®(pascal)Delphi Programming.              ;
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ;
+----------------------------------------------------------------------------- ;
 USAGE TERMS                                                                   ;
                                                                               ;
 DarkSystemCD® used to identify, meet, work and publish                        ;
@@ -33,16 +33,17 @@ version 1.0.1 had updated the theme at different color sets;                  ;
   font-size: 100%;
   line-height: 110%;
 }
-.CodeMirror-focused .CodeMirror-activeline-background {
-  background-color: rgba(102, 102, 102, 0.2);
-}
+// SELECTED                                                                   ;
 .CodeMirror-selected {
   background-color: rgba(123, 91, 91, 0.5);
 }
 .CodeMirror-focused .CodeMirror-selected  {
   background-color: rgba(123, 91, 91, 0.7);
 }
-
+.CodeMirror-focused .CodeMirror-activeline-background {
+  background-color: rgba(102, 102, 102, 0.2);
+}
+// LINE_NUMBER PANEL                                                          ;
 .CodeMirror-gutters, .CodeMirror-gutter, .CodeMirror-gutter-wrapper {
   background-color: #222222;
   color: #6060c7;
@@ -68,18 +69,16 @@ version 1.0.1 had updated the theme at different color sets;                  ;
         color: #767676;
     }
 }
-
+// CURSOR                                                                     ;
 .CodeMirror-cursor {
     border-left: 1px solid #c5c8c6 !important;
 }
-
 .CodeMirror-overwrite .CodeMirror-cursor {
     border-left: none !important;
     border-bottom: 1px solid #fff;
 }
-
+// MATCH                                                                      ;
 .CodeMirror-matchingtag {
-  border-radius: 35px;
   animation: matchingbracket 0.8s infinite alternate ease;
 }
 .CodeMirror-matchingbracket {
@@ -109,24 +108,25 @@ version 1.0.1 had updated the theme at different color sets;                  ;
     from {color:red;background-color: rgba(255, 0, 0, 1);}
     to {color:white;background-color: rgba(255, 0, 0, 0.5);}
 }
-
+// COMMENT                                                                    ;
 .cm-comment, .cm-m-javascript.cm-comment, .cm-m-xml.cm-comment {
   background-color: rgba(37, 60, 159, 0.5);
   color: silver;
   font-family: "Courier New", monospace;
   font-size: 90%;
 }
-
+// CODE FOLD                                                                  ;
 .CodeMirror-widget, .CodeMirror-foldmarker {
   background-color: rgba(159, 65, 37, 0.5);
   color: silver;
   border: 0px;
 }
-
+// TEXT                                                                       ;
 .cm-text, .cm-m-xml {
   color: silver;
 }
 
+// CODE LEAD                                                                  ;
 .cm-operator, .cm-atom, .cm-m-javascript {
   color: white;
   font-family: "Ariel", monospace;
@@ -134,30 +134,43 @@ version 1.0.1 had updated the theme at different color sets;                  ;
 .cm-keyword, .cm-m-css.cm-builtin {
   color: white;
 }
+// CODE PROPERTY                                                              ;
 .cm-property {
   color: #a896d9;
-}
-.cm-m-javascript.cm-variable, .cm-m-css.cm-meta {
-  color: #ea8989;
-  font-family: "Verdana", monospace;
-  font-size: smaller;
 }
 .cm-m-javascript.cm-property, .cm-qualifier, .cm-attribute {
   color: #ba8b8b;
 }
-.cm-def, .cm-variable, .cm-variable-1, .cm-variable-2, .cm-variable-3 {
-  color: silver;
-}
 .cm-m-css.cm-property, .cm-tag {
   color: gray;
-}
-.cm-string, .cm-number {
-  color: yellow;
-  font-family: "Ariel", monospace;
-  font-weight: lighter;
 }
 .cm-m-css.cm-atom, .cm-m-xml.cm-atom {
   color: #6495b9;
   font-family: "Ariel", monospace;
   font-weight: lighter;
+}
+// CODE VARIABLE                                                              ;
+.cm-m-javascript.cm-variable, .cm-m-css.cm-meta {
+  color: #ea8989;
+  font-family: "Verdana", monospace;
+  font-size: smaller;
+}
+.cm-def, .cm-variable, .cm-variable-1, .cm-variable-2, .cm-variable-3 {
+  color: silver;
+}
+.cm-string, .cm-string-2, .cm-number {
+  color: yellow;
+  font-family: "Ariel", monospace;
+  font-weight: lighter;
+}
+// ERROR                                                                      ;
+.cm-error {
+  background-color: rgba(255, 192, 203, 0.2);
+  color: red;
+  border-bottom: 1px solid red;
+  animation: cmerror 0.3s infinite alternate ease-in-out;
+}
+@keyframes cmerror {
+    from {border-bottom: 3px solid rgba(255, 0, 0, 0.7);}
+    to {border-bottom: 1px solid red;}
 }
