@@ -1,65 +1,84 @@
-/*                                                                            ;
-DarkSystemCD® | Brackets Theme 1.0.1                                          ;
-------------------------------                                                ;
-https://github.com/wds-connections                                            ;
-                                                                              ;
-translated to html,css,javascript code options(addind new color sets)         ;
-the workflow built from DarkSystemCD®(pascal)Delphi Programming.              ;
------------------------------------------------------------------------------ ;
-USAGE TERMS                                                                   ;
-                                                                              ;
-DarkSystemCD® used to identify, meet, work and publish                        ;
-logics and programming design, software, games and music                      ;
-on interfaces and electronic, digital and virtual media.                      ;
-                                                                              ;
-WDS_Styles is a layout personality scheme                                     ;
-created for the presentation of WDS.DarkBrain® Productions.                   ;
-                                                                              ;
-available as sample usage from the original production of DarkSystemCD quality;
-which as far it provides has being created from BloodArt(art and literature). ;
-references should restrict moral violence from any purpose where              ;
-try-catch-finnaly would affect this availability before whatever statement.   ;
-                                                                              ;
-thanks for choosing DarkSystemCD.                                             ;
-- - - - - - - - - - - - - - - - -                                             ;
-version 1.0.1 had updated the theme at different color sets;                  ;
-              go to github to download previous ones;                         ;
-              1.0.1 is focused to work on a Windows machine;                  ;
+/*                                                                  ;
+DarkSystemCD® | Brackets Theme 1.0.2                                ;
+------------------------------                                      ;
+https://github.com/wds-connections                                  ;
+                                                                    ;
+translated to html,css,javascript                                   ;
+the workflow built from DarkSystemCD®(pascal)Delphi Programming.    ;
+------------------------------------------------------------------- ;
+USAGE TERMS                                                         ;
+                                                                    ;
+DarkSystemCD® used to identify, meet, work and publish              ;
+logics and programming design, software, games and music            ;
+on interfaces and electronic, digital and virtual media.            ;
+                                                                    ;
+WDS_Styles is a layout personality scheme                           ;
+created for the presentation of WDS.DarkBrain® Productions.         ;
+                                                                    ;
+available as sample usage from the original production of           ;
+DarkSystemCD quality; which as far it provides has being created    ;
+from BloodArt(art and literature).                                  ;
+references should restrict moral violence from any purpose where    ;
+try-catch-finnaly would affect this availability before whatever    ;
+statement.                                                          ;
+                                                                    ;
+thanks for choosing DarkSystemCD.                                   ;
+- - - - - - - - - - - - - - - - -                                   ;
+version 1.0.1 had updated the theme at different color sets;        ;
+              go to github to download previous ones;               ;
+              1.0.1 is focused to work on a Windows machine;        ;
+version 1.0.2 tweaked colors and text                               ;
 */
 
-.CodeMirror, .CodeMirror-scroll {
-  background-color: #000;
-  color: silver;
+.CodeMirror, .CodeMirror-scroll, .CodeMirror-code {
+  background-color: #020202; color: #b3b3b3;
   font-size: 100%;
   line-height: 110%;
 }
-// SELECTED                                                                   ;
-.CodeMirror-selected {
-  background-color: rgba(123, 91, 91, 0.5);
+
+.CodeMirror-gutter.CodeMirror-linenumbers {
+  background-color: #160404;
 }
-.CodeMirror-focused .CodeMirror-selected  {
-  background-color: rgba(123, 91, 91, 0.7);
+.CodeMirror-gutter.CodeMirror-foldgutter {
+  background-color: #1b0b0b;
 }
-.CodeMirror-focused .CodeMirror-activeline-background {
-  background-color: rgba(102, 102, 102, 0.2);
+.CodeMirror-gutter.brackets-inspection-gutter {
+  background-color: #38320c;
 }
-// LINE_NUMBER PANEL                                                          ;
-.CodeMirror-gutters, .CodeMirror-gutter, .CodeMirror-gutter-wrapper {
-  background-color: #222222;
-  color: #6060c7;
-}
-.CodeMirror-foldgutter{
-  background-color: rgba(42, 49, 78, 0.7);
-  color: #6060c7;
-  font-size: 70%;
-}
-.CodeMirror-foldgutter-open:after {
-    color: #5f78a8;
-}
-.CodeMirror-foldgutter-folded:after {
-    color: #a9a9c6;
+.brackets-inspection-gutter-error {
+  background-color: #380c0c;
 }
 
+//[?]FileHeader                                 ;
+.view-pane .pane-header{
+  background-color: #0d2a45 !important;
+}
+.view-pane.active-pane .pane-header{
+  background-color: #2B2A1D !important;
+  color: white !important;
+}
+
+//[?]Cursor                                     ;
+.CodeMirror-cursor {
+    border-left: 1px solid #c5c8c6 !important;
+}
+.CodeMirror-cursors.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 2px solid #fff;
+}
+
+//[?]CurrentLine(ActiveLine)                    ;
+.CodeMirror-activeline-background.CodeMirror-linebackground {
+  background-color: rgba(221, 255, 0, 0.07);
+}
+.CodeMirror-gutter-background.CodeMirror-activeline-gutter {
+  background-color: rgba(221, 255, 0, 0.20);
+}
+
+//[?]Fold                                       ;
+.CodeMirror-widget, .CodeMirror-foldmarker {
+  background-color: #692c2c; color: #a4a4a4; border: 0px;
+}
 .CodeMirror-focused .CodeMirror-activeline {
     .CodeMirror-gutter-elt {
         background: rgba(0, 0, 0, 0.2);
@@ -69,102 +88,145 @@ version 1.0.1 had updated the theme at different color sets;                  ;
         color: #767676;
     }
 }
-// CURSOR                                                                     ;
-.CodeMirror-cursor {
-    border-left: 1px solid #c5c8c6 !important;
+
+//[?]TextSelection                              ;
+.CodeMirror-selected {
+  background-color: rgba(123, 91, 91, 0.5);
+  color: yellow !important;
 }
-.CodeMirror-overwrite .CodeMirror-cursor {
-    border-left: none !important;
-    border-bottom: 1px solid #fff;
+.CodeMirror-focused .CodeMirror-selected  {
+  background-color: rgba(123, 91, 91, 0.7);
+  color: yellow !important;
 }
-// MATCH                                                                      ;
-.CodeMirror-matchingtag {
-  line-height: normal !important;
-  animation: matchingbracket 0.8s infinite alternate ease;
-}
-.CodeMirror-matchingbracket {
-  background-color: rgba(178, 178, 178, 0.3);
-  font-weight: bold;
-  color:lime !important;
-  border-radius: 35px;
-  border-left: 2px solid transparent !important;
-  border-right: 2px solid transparent !important;
-  animation: matchingbracket 0.6s infinite alternate ease-in-out;
-}
-@keyframes matchingbracket {
-    from {background-color: rgba(178, 178, 178, 0.1);}
-    to {background-color: rgba(178, 178, 178, 0.3);}
-}
-.cm-m-clike.CodeMirror-matchingtag,
-.cm-m-xml.CodeMirror-matchingtag{
-  background-color: rgba(178, 178, 178, 0.15);
-}
-.CodeMirror-nonmatchingtag, .CodeMirror-nonmatchingbracket {
-  background-color: rgba(255, 0, 0, 0.5);
-  color:red;
-  font-weight: bold;
-  animation: nonmatching 0.3s infinite alternate ease-in-out;
-}
-@keyframes nonmatching {
-    from {color:red;background-color: rgba(255, 0, 0, 1);}
-    to {color:white;background-color: rgba(255, 0, 0, 0.5);}
-}
-// COMMENT                                                                    ;
-.cm-comment, .cm-m-javascript.cm-comment, .cm-m-xml.cm-comment {
-  background-color: rgba(37, 60, 159, 0.5);
-  color: silver;
-  font-family: "Courier New", monospace;
-  font-size: 90%;
-}
-// CODE FOLD                                                                  ;
-.CodeMirror-widget, .CodeMirror-foldmarker {
-  background-color: rgba(159, 65, 37, 0.5);
-  color: silver;
-  border: 0px;
-}
-// TEXT                                                                       ;
-.cm-text, .cm-m-xml {
-  color: silver;
+.CodeMirror-focused .CodeMirror-activeline-background {
+  background-color: rgba(102, 102, 102, 0.2);
+  color: yellow !important;
 }
 
-// CODE LEAD                                                                  ;
-.cm-operator, .cm-atom, .cm-m-javascript {
-  color: white;
-  font-family: "Ariel", monospace;
+//[?]Comment                                    ;
+.cm-comment, .cm-m-javascript.cm-comment {
+  color: #9eb7da;
+  background-color: rgba(28, 65, 120, 0.6);
+  font-family: "Courier New", monospace;
+  font-size: 90%; line-height: 120%;
 }
-.cm-keyword, .cm-m-css.cm-builtin {
-  color: white;
+
+//[?]HTML                                       ;
+.cm-m-xml.cm-meta {
+  color: #e16767;
 }
-// CODE PROPERTY                                                              ;
-.cm-property {
-  color: #a896d9;
+
+.cm-m-xml.cm-tag.cm-bracket {
+  color: #596887; font-weight: bolder;
 }
-.cm-m-javascript.cm-property, .cm-qualifier, .cm-attribute {
+.cm-m-xml.cm-tag, .cm-m-xml.cm-attribute {
+  color: #596887;
+  font-family: "Consolas", sans-serif;
+}
+.cm-m-xml.cm-string {
+  color: #f1c317;
+}
+
+//[?]CSS                                        ;
+.cm-m-css {
+  color: #bebebe;
+}
+.cm-m-css.cm-builtin {
+  color: #e7e7e7;
+}
+.cm-m-css.cm-tag {
+  color: #b7b7b7;
+}
+.cm-m-css.cm-qualifier {
   color: #ba8b8b;
 }
-.cm-m-css.cm-property, .cm-tag {
+.cm-m-css.cm-property {
   color: gray;
 }
-.cm-m-css.cm-atom, .cm-m-xml.cm-atom {
+.cm-m-css.cm-atom {
   color: #6495b9;
   font-family: "Ariel", monospace;
   font-weight: lighter;
 }
-// CODE VARIABLE                                                              ;
+.cm-m-css.cm-number {
+  color: #eded00;
+  font-family: "Ariel", monospace;
+}
+.cm-m-css.cm-meta {
+  color: #ea8989;
+  font-family: "Verdana", monospace;
+  font-size: smaller;
+}
+.cm-m-css.cm-def {
+  color: silver;
+}
+.cm-m-css.cm-variable, .cm-m-css.cm-variable-2,
+.cm-m-css.cm-variable-3 {
+  color: silver;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+.cm-m-css.cm-keyword {
+  color: #e7e7e7;
+  font-family: "Consolas", sans-serif;
+}
+.cm-m-css.cm-string {
+  color: #f1c317;
+}
+
+//[?]Javascript                                 ;
+.cm-m-javascript {
+  color: #cecece;
+  font-family: "Ariel", monospace;
+}
+.cm-m-javascript.cm-keyword {
+  color: #e7e7e7;
+}
+.cm-m-javascript.cm-def, .cm-m-javascript.cm-variable-2 {
+  color: #9f9f9f;
+}
+.cm-m-javascript.cm-string {
+  color: #e3e30e;
+}
+.cm-m-javascript.cm-number {
+  color: #dede0c;
+  font-family: "Ariel", monospace;
+}
+.cm-m-javascript.cm-operator {
+  color: #e7e7e7;
+}
 .cm-m-javascript.cm-variable, .cm-m-css.cm-meta {
   color: #ea8989;
   font-family: "Verdana", monospace;
   font-size: smaller;
 }
-.cm-def, .cm-variable, .cm-variable-1, .cm-variable-2, .cm-variable-3 {
-  color: silver;
+.cm-m-javascript.cm-property {
+  color: #ba8b8b;
 }
-.cm-string, .cm-string-2, .cm-number {
-  color: yellow;
+.cm-m-javascript.cm-atom {
+  color: #e7e7e7;
   font-family: "Ariel", monospace;
-  font-weight: lighter;
 }
-// ERROR                                                                      ;
+
+.CodeMirror-matchingbracket {
+  background-color: rgba(52, 130, 178, 0.7);
+  color: white !important;
+  padding-left: 3px; padding-right: 3px;
+  border: 1px solid #c2c2c2;
+}
+
+//[?]Match                                      ;
+.CodeMirror-matchingtag {
+  background-color: rgba(112, 103, 87, 0.2);
+  line-height: 110%; font-family: "Courier New", monospace;
+  animation: matchingbracket 0.8s infinite alternate cubic-bezier(.46, .77, .71, .14);
+}
+@keyframes matchingbracket {
+    from {background-color: rgba(178, 178, 178, 0.1);}
+    to {background-color: rgba(178, 178, 178, 0.2);}
+}
+
+//[?]ERROR                                      ;
 .cm-error {
   background-color: rgba(255, 192, 203, 0.2);
   color: red;
