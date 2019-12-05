@@ -1,29 +1,29 @@
 /*                                                                  ;
-DarkSystemCD® | Brackets Theme 1.0.2                                ;
+ DarkSystemCD® | Brackets Theme 1.0.2                               ;
 ------------------------------                                      ;
-https://github.com/wds-connections                                  ;
+ https://github.com/wds-connections                                 ;
                                                                     ;
-translated to html,css,javascript                                   ;
-the workflow built from DarkSystemCD®(pascal)Delphi Programming.    ;
+ translated to html,css,javascript                                  ;
+ the workflow built from DarkSystemCD®(pascal)Delphi Programming.   ;
 ------------------------------------------------------------------- ;
-USAGE TERMS                                                         ;
+  USAGE TERMS                                                       ;
                                                                     ;
-DarkSystemCD® used to identify, meet, work and publish              ;
-logics and programming design, software, games and music            ;
-on interfaces and electronic, digital and virtual media.            ;
+  DarkSystemCD® used to identify, meet, work and publish            ;
+  logics and programming design, software, games and music          ;
+  on interfaces and electronic, digital and virtual media.          ;
                                                                     ;
-WDS_Styles is a layout personality scheme                           ;
-created for the presentation of WDS.DarkBrain® Productions.         ;
+  WDS_Styles is a layout personality scheme                         ;
+  created for the presentation of WDS.DarkBrain® Productions.       ;
                                                                     ;
-available as sample usage from the original production of           ;
-DarkSystemCD quality; which as far it provides has being created    ;
-from BloodArt(art and literature).                                  ;
-references should restrict moral violence from any purpose where    ;
-try-catch-finnaly would affect this availability before whatever    ;
-statement.                                                          ;
+  available as sample usage from the original production of         ;
+  DarkSystemCD quality; which as far it provides has being created  ;
+  from BloodArt(art and literature).                                ;
+  references should restrict moral violence from any purpose where  ;
+  try-catch-finnaly would affect this availability before whatever  ;
+  statement.                                                        ;
                                                                     ;
-thanks for choosing DarkSystemCD.                                   ;
-- - - - - - - - - - - - - - - - -                                   ;
+  thanks for choosing DarkSystemCD.                                 ;
+- - - - - - - - - - - - - - - - - -                                 ;
 version 1.0.1 had updated the theme at different color sets;        ;
               go to github to download previous ones;               ;
               1.0.1 is focused to work on a Windows machine;        ;
@@ -77,7 +77,8 @@ version 1.0.2 tweaked colors and text                               ;
 
 //[?]Fold                                       ;
 .CodeMirror-widget, .CodeMirror-foldmarker {
-  background-color: #692c2c; color: #a4a4a4; border: 0px;
+  background-color: #692c2c; color: #a4a4a4;
+  border: 1.5px solid #641b1b;
 }
 .CodeMirror-focused .CodeMirror-activeline {
     .CodeMirror-gutter-elt {
@@ -87,6 +88,15 @@ version 1.0.2 tweaked colors and text                               ;
     .inline-widget .CodeMirror-gutter-elt {
         color: #767676;
     }
+}
+.CodeMirror-foldgutter-folded {
+  font-size: 150%;
+}
+.CodeMirror-foldgutter-folded::after {
+  color: #b29834;
+}
+.CodeMirror-foldgutter-open::after {
+  color: #9d4b4b;
 }
 
 //[?]TextSelection                              ;
@@ -105,8 +115,8 @@ version 1.0.2 tweaked colors and text                               ;
 
 //[?]Comment                                    ;
 .cm-comment, .cm-m-javascript.cm-comment {
-  color: #9eb7da;
   background-color: rgba(28, 65, 120, 0.6);
+  color: #9eb7da;
   font-family: "Courier New", monospace;
   font-size: 90%; line-height: 120%;
 }
@@ -117,7 +127,7 @@ version 1.0.2 tweaked colors and text                               ;
 }
 
 .cm-m-xml.cm-tag.cm-bracket {
-  color: #596887; font-weight: bolder;
+  color: #65789d; font-weight: bolder;
 }
 .cm-m-xml.cm-tag, .cm-m-xml.cm-attribute {
   color: #596887;
@@ -125,6 +135,8 @@ version 1.0.2 tweaked colors and text                               ;
 }
 .cm-m-xml.cm-string {
   color: #f1c317;
+  font-size: 90%;
+  font-family: "Courier New", monospace;
 }
 
 //[?]CSS                                        ;
@@ -172,6 +184,8 @@ version 1.0.2 tweaked colors and text                               ;
 }
 .cm-m-css.cm-string {
   color: #f1c317;
+  font-size: 90%;
+  font-family: "Courier New", monospace;
 }
 
 //[?]Javascript                                 ;
@@ -187,6 +201,8 @@ version 1.0.2 tweaked colors and text                               ;
 }
 .cm-m-javascript.cm-string {
   color: #e3e30e;
+  font-size: 90%;
+  font-family: "Courier New", monospace;
 }
 .cm-m-javascript.cm-number {
   color: #dede0c;
@@ -211,17 +227,23 @@ version 1.0.2 tweaked colors and text                               ;
 .CodeMirror-matchingbracket {
   background-color: rgba(52, 130, 178, 0.7);
   color: white !important;
-  padding-left: 3px; padding-right: 3px;
-  border: 1px solid #c2c2c2;
+  line-height: 90%;
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  animation: matchingbracket 0.8s infinite alternate cubic-bezier(.46, .77, .71, .14);
+}
+@keyframes matchingbracket {
+    from {background-color: rgba(52, 130, 178, 0.8);}
+    to {background-color: rgba(52, 130, 178, 0.5);}
 }
 
 //[?]Match                                      ;
 .CodeMirror-matchingtag {
   background-color: rgba(112, 103, 87, 0.2);
-  line-height: 110%; font-family: "Courier New", monospace;
-  animation: matchingbracket 0.8s infinite alternate cubic-bezier(.46, .77, .71, .14);
+  line-height: 115%;
+  animation: matchingtag 0.8s infinite alternate cubic-bezier(.46, .77, .71, .14);
 }
-@keyframes matchingbracket {
+@keyframes matchingtag {
     from {background-color: rgba(178, 178, 178, 0.1);}
     to {background-color: rgba(178, 178, 178, 0.2);}
 }
