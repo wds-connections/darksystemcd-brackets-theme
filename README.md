@@ -5,20 +5,20 @@ provide the productivity quality production from DarkSystemCD programming as WDS
 
 <h3>brackets .less file</h3>
 
-![DarkSystemCD® | Brackets Theme](http://i.imgur.com/6DEyKCy.png)
+![DarkSystemCD® | Brackets Theme](https://drive.google.com/uc?authuser=0&id=1BSmacXPShtPTvqaA-Kxpc0q4TF8BskUR&export=download)
 
 <h3>style .css file</h3>
 
-![DarkSystemCD® | Brackets Theme](http://i.imgur.com/J9UUTlN.png)
+![DarkSystemCD® | Brackets Theme](https://drive.google.com/uc?authuser=0&id=1cevJB2tQpRIbyvXdGGomqcWrUfPUvIFF)
 
 <h3>logic .js file</h3>
 
-![DarkSystemCD® | Brackets Theme](http://i.imgur.com/mS157e2.png)
+![DarkSystemCD® | Brackets Theme](https://drive.google.com/uc?authuser=0&id=1SJMAIyu0i482_FLb4L620Q_SjsHsYj0-)
 
 
 <h3>document .html file</h3>
 
-![DarkSystemCD® | Brackets Theme](http://i.imgur.com/74JyXDe.png)
+![DarkSystemCD® | Brackets Theme](https://drive.google.com/uc?authuser=0&id=1fCC7N-sZ3DPe-02vVXk3WrsqUORISk2T)
 
 ---
 
