@@ -30,12 +30,12 @@ version 1.0.1 had updated the theme at different color sets;        ;
 version 1.0.2 tweaked colors and text                               ;
 */
 
+
+
 .CodeMirror, .CodeMirror-scroll, .CodeMirror-code {
   background-color: #020202; color: #b3b3b3;
-  font-size: 100%;
-  line-height: 110%;
+  font-size: 100%; line-height: 110%;
 }
-
 .CodeMirror-gutter.CodeMirror-linenumbers {
   background-color: #160404;
 }
@@ -81,16 +81,18 @@ version 1.0.2 tweaked colors and text                               ;
   background-color: #692c2c; color: #a4a4a4;
   border: 0px solid #641b1b;
 }
+
 .CodeMirror-focused .CodeMirror-activeline {
-    .CodeMirror-gutter-elt {
-        background: rgba(0, 0, 0, 0.2);
-        color: #fff;
-    }
-    .inline-widget .CodeMirror-gutter-elt {
-        color: #767676;
-    }
+  .CodeMirror-gutter-elt {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  .inline-widget .CodeMirror-gutter-elt {
+    color: #767676;
+  }
 }
 .CodeMirror-foldgutter-folded {
+  position: absolute; top: -5px;
   font-size: 150%;
 }
 .CodeMirror-foldgutter-folded::after {
@@ -126,7 +128,6 @@ version 1.0.2 tweaked colors and text                               ;
 .cm-m-xml.cm-meta {
   color: #e16767;
 }
-
 .cm-m-xml.cm-tag.cm-bracket {
   color: #65789d;
 }
@@ -136,7 +137,7 @@ version 1.0.2 tweaked colors and text                               ;
 }
 .cm-m-xml.cm-string {
   color: #f1c317;
-  font-size: 90%;
+  font-size: 85%;
   font-family: "Courier New", monospace;
 }
 
@@ -158,16 +159,16 @@ version 1.0.2 tweaked colors and text                               ;
 }
 .cm-m-css.cm-atom {
   color: #6495b9;
-  font-family: "Ariel", monospace;
+  font-family: "Consolas", monospace;
   font-weight: lighter;
 }
 .cm-m-css.cm-number {
   color: #eded00;
-  font-family: "Ariel", monospace;
+  font-family: "Consolas", monospace;
 }
 .cm-m-css.cm-meta {
   color: #ea8989;
-  font-family: "Verdana", monospace;
+  font-family: "Consolas", monospace;
   font-size: smaller;
 }
 .cm-m-css.cm-def {
@@ -185,14 +186,14 @@ version 1.0.2 tweaked colors and text                               ;
 }
 .cm-m-css.cm-string {
   color: #f1c317;
-  font-size: 90%;
+  font-size: 85%;
   font-family: "Courier New", monospace;
 }
 
 //[?]Javascript                                 ;
 .cm-m-javascript {
   color: #cecece;
-  font-family: "Ariel", monospace;
+  font-family: "Consolas", monospace;
 }
 .cm-m-javascript.cm-keyword {
   color: #e7e7e7;
@@ -202,19 +203,19 @@ version 1.0.2 tweaked colors and text                               ;
 }
 .cm-m-javascript.cm-string {
   color: #e3e30e;
-  font-size: 90%;
+  font-size: 85%;
   font-family: "Courier New", monospace;
 }
 .cm-m-javascript.cm-number {
   color: #dede0c;
-  font-family: "Ariel", monospace;
+  font-family: "Consolas", monospace;
 }
 .cm-m-javascript.cm-operator {
   color: #e7e7e7;
 }
 .cm-m-javascript.cm-variable, .cm-m-css.cm-meta {
   color: #ea8989;
-  font-family: "Verdana", monospace;
+  font-family: "Consolas", monospace;
   font-size: 80%;
 }
 .cm-m-javascript.cm-property {
@@ -222,9 +223,10 @@ version 1.0.2 tweaked colors and text                               ;
 }
 .cm-m-javascript.cm-atom {
   color: #e7e7e7;
-  font-family: "Ariel", monospace;
+  font-family: "Consolas", monospace;
 }
 
+//[?]Match                                      ;
 .CodeMirror-matchingbracket {
   background-color: rgba(52, 130, 178, 0.7);
   color: white !important;
@@ -234,19 +236,18 @@ version 1.0.2 tweaked colors and text                               ;
   animation: matchingbracket 0.8s infinite alternate cubic-bezier(.46, .77, .71, .14);
 }
 @keyframes matchingbracket {
-    from {background-color: rgba(52, 130, 178, 0.8);}
-    to {background-color: rgba(52, 130, 178, 0.5);}
+  from {background-color: rgba(52, 130, 178, 0.8);}
+  to {background-color: rgba(52, 130, 178, 0.5);}
 }
 
-//[?]Match                                      ;
 .CodeMirror-matchingtag {
   background-color: rgba(112, 103, 87, 0.2);
   line-height: 115%;
   animation: matchingtag 0.8s infinite alternate cubic-bezier(.46, .77, .71, .14);
 }
 @keyframes matchingtag {
-    from {background-color: rgba(178, 178, 178, 0.1);}
-    to {background-color: rgba(178, 178, 178, 0.2);}
+  from {background-color: rgba(178, 178, 178, 0.1);}
+  to {background-color: rgba(178, 178, 178, 0.2);}
 }
 
 //[?]ERROR                                      ;
@@ -257,6 +258,6 @@ version 1.0.2 tweaked colors and text                               ;
   animation: cmerror 0.3s infinite alternate ease-in-out;
 }
 @keyframes cmerror {
-    from {border-bottom: 3px solid rgba(255, 0, 0, 0.7);}
-    to {border-bottom: 1px solid red;}
+  from {border-bottom: 3px solid rgba(255, 0, 0, 0.7);}
+  to {border-bottom: 1px solid red;}
 }
