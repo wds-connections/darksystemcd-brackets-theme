@@ -8,16 +8,16 @@ provide the productivity quality production from DarkSystemCD programming as WDS
 
 <h3>style .css file</h3>
 
-![DarkSystemCD® | Brackets Theme](https://drive.google.com/uc?authuser=0&id=1cevJB2tQpRIbyvXdGGomqcWrUfPUvIFF)
+![DarkSystemCD® | Brackets Theme](https://i.imgur.com/R8a3FU9.jpg)
 
 <h3>logic .js file</h3>
 
-![DarkSystemCD® | Brackets Theme](https://drive.google.com/uc?authuser=0&id=1SJMAIyu0i482_FLb4L620Q_SjsHsYj0-)
+![DarkSystemCD® | Brackets Theme](https://i.imgur.com/IIUrJ5V.jpg)
 
 
 <h3>document .html file</h3>
 
-![DarkSystemCD® | Brackets Theme](https://drive.google.com/uc?authuser=0&id=1fCC7N-sZ3DPe-02vVXk3WrsqUORISk2T)
+![DarkSystemCD® | Brackets Theme](https://i.imgur.com/5mtcme8.jpg)
 
 ---
 
