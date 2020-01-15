@@ -4,11 +4,11 @@ provide the productivity quality production from DarkSystemCD programming as WDS
 
 <h3>brackets .less file</h3>
 
-![DarkSystemCD® | Brackets Theme](https://drive.google.com/uc?authuser=0&id=1BSmacXPShtPTvqaA-Kxpc0q4TF8BskUR&export=download)
+![DarkSystemCD® | Brackets Theme](https://i.imgur.com/R8a3FU9.jpg)
 
 <h3>style .css file</h3>
 
-![DarkSystemCD® | Brackets Theme](https://i.imgur.com/R8a3FU9.jpg)
+![DarkSystemCD® | Brackets Theme](https://i.imgur.com/pi4iHuE.jpg)
 
 <h3>logic .js file</h3>
 
